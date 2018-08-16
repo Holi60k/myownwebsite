@@ -1,0 +1,21 @@
+html {
+  background: none;
+}
+
+#nav {
+  weight: 100%;
+  height: 150px;
+  background: black;
+  color: red;
+}
+
+.nav {
+	weight: 100%;
+	heiht: 150px;
+	background: black;
+	color: blue;
+}
+
+h1 {
+	color: red;
+}

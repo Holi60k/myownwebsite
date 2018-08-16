@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:login.xhtml" PATH="login.xhtml"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:login.xhtml:0" NAME="item" PATH="login.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="welcome:#{loginController.login}:welcome.xhtml" NAME="output"
+    PATH="welcome.xhtml" TARGET="rules:welcome.xhtml"
+    TITLE="#{loginController.login}:welcome" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="err:#{loginController.login}:error.xhtml"
+    NAME="output1" PATH="error.xhtml" TARGET="rules:error.xhtml"
+    TITLE="#{loginController.login}:err" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:welcome.xhtml" PATH="welcome.xhtml"
+  SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:error.xhtml" PATH="error.xhtml"
+  SHAPE="256,177,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>
