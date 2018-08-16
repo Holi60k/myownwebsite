@@ -16,25 +16,27 @@ import java.io.Serializable;
 @Named("loginController")
 @SessionScoped
 public class LoginController implements Serializable {
-	
-	private static final long serialVersionUID = 1L;
 
-	@Inject Credentials credentials;
-	
-	public LoginController() {}
-	
-	/**
-	 * Bejelentkezés a weboldalra. 
-	 */
-	public String login() {
-		new EntityManagement().createConnection("myownwebsite");
-		UserDAO userDAO = new UserDAO();
-		if(userDAO.userIsValid(credentials)) {
-			credentials.setLoggedIn(true);
-			return "welcome";
-		}
-		
-		return "error";
-	}
+    private static final long serialVersionUID = 1L;
+
+    @Inject
+    Credentials credentials;
+
+    public LoginController() {
+    }
+
+    /**
+     * Bejelentkezés a weboldalra.
+     */
+    public String login() {
+        new EntityManagement().createConnection("myownwebsite");
+        UserDAO userDAO = new UserDAO();
+        if (userDAO.userIsValid(credentials)) {
+            credentials.setLoggedIn(true);
+            return "welcome";
+        }
+
+        return "error";
+    }
 
 }

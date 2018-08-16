@@ -21,6 +21,7 @@ public class EntityManagement {
 
     /**
      * Létrehozza az adatbázissal való kapcsolatot, a {@code entitiyManager} létrehozásával.
+     *
      * @param persistenceUnitName a persistence.xml megegtalálásához szükséges név.
      */
     public void createConnection(String persistenceUnitName) {
@@ -38,6 +39,7 @@ public class EntityManagement {
 
     /**
      * Visszaadja az EntityManagerFactory-t.
+     *
      * @return EntityManagerFactory.
      */
     public EntityManagerFactory getEntityManagerFactory() {
@@ -46,6 +48,7 @@ public class EntityManagement {
 
     /**
      * Beállítja az EntitiyManagerFactory-t.
+     *
      * @param entityManagerFactory az új EntityManagerFactory.
      */
     public void setEntityManagerFactory(EntityManagerFactory newEntityManagerFactory) {
@@ -54,6 +57,7 @@ public class EntityManagement {
 
     /**
      * Visszaadja az EntityManager-t.
+     *
      * @return EntityManager.
      */
     public EntityManager getEntityManager() {
@@ -62,6 +66,7 @@ public class EntityManagement {
 
     /**
      * Beállítja az EntitiyManager-t.
+     *
      * @param entityManager az új EntityManager.
      */
     public void setEntityManager(EntityManager newEntityManager) {
